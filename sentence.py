@@ -15,6 +15,7 @@ noun=['earth','water','fire','air','land','sea','music','flower','tree','dune','
 adje=['pure','clean','serene','wet','sweet','refreshing','hot','cold','dry']
 
 
+#SENTENCE: X is A
 print (word(noun) + " is " + word(adje))
 
 #SENTENCE: not only THIS but also THAT
@@ -37,4 +38,24 @@ while nounOne == nounTwo:
 	nounTwo=word(noun)
 
 print ("if " + nounOne + " is " + adjeOne + " then the " + nounTwo + " is " + adjeTwo)
+
+# noun is made up of adj1, adj2, adj3 and adj4 noun
+# SENTENCE X is made up of A, B, C, D Y
+
+#reset
+adjeThree=""
+adjeFour=""
+adjeTwo =""
+adjeOne =""
+
+
+while adjeOne == adjeTwo or adjeOne == adjeThree or adjeOne == adjeFour or adjeTwo == adjeThree or adjeTwo == adjeFour or adjeThree == adjeOne or  adjeThree == adjeFour or adjeFour == adjeOne:
+
+	adjeThree=word(adje)
+	adjeFour=word(adje)
+	adjeTwo =word(adje)
+	adjeOne =word(adje)
+
+
+print (nounOne + " is made up of " + adjeOne +", "+ adjeTwo +", "+ adjeThree +", and " + adjeFour + " " + nounTwo)
 
